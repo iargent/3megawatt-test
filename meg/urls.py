@@ -2,6 +2,7 @@ from django.urls import include, path
 from django.contrib import admin
 
 urlpatterns = [
+    path('', include('sites.urls')),
     path('sites/', include('sites.urls')),
     path('summary/', include('summary.urls')),
     path('summary-average/', include('summary.urls')),
